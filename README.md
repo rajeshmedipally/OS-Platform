@@ -44,6 +44,29 @@ An interactive, visual, and gamified web platform designed to help students unde
 
 ---
 
+## 📦 Installation & Setup
+
+1.  **Clone the Repository**
+    ```bash
+    git clone https://github.com/your-username/os-interactive-learning.git
+    cd os-interactive-learning
+    ```
+
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3.  **Run Locally**
+    ```bash
+    npm run dev
+    ```
+    Open `http://localhost:5173/` (or the port shown in your terminal) to view the app.
+
+---
+
 ## 📂 Project Structure
 
 ```
@@ -60,3 +83,9 @@ src/
 ```
 
 ---
+
+## 🤝 Contributing
+Contributions are welcome! If you have ideas for new simulations (e.g., Paging, Disk Scheduling), feel free to open an issue or pull request.
+
+## 📝 License
+This project is open-source and available under the MIT License.

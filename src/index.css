@@ -1,0 +1,83 @@
+:root {
+  --primary: #7209b7;
+  --primary-glow: #b5179e;
+  --secondary: #4cc9f0;
+  --accent: #f72585;
+  --bg-dark: #0a0118;
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --text-light: #f8f9fa;
+  --text-dim: #adb5bd;
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --success: #06d6a0;
+  --error: #ef476f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-dark);
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(114, 9, 183, 0.2) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(247, 37, 133, 0.15) 0%, transparent 40%);
+  color: var(--text-light);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: transform 0.1s, box-shadow 0.2s;
+}
+
+/* Utilities */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, var(--secondary), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(76, 201, 240, 0.5);
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
